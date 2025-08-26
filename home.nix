@@ -25,6 +25,9 @@
     pkgs.podman
     pkgs.jq
     pkgs.xclip
+    pkgs.gnumake42
+    pkgs.gcc
+    pkgs.ripgrep
 
     # Langs
     ## Go
@@ -55,7 +58,6 @@
   # ENVIRONMENT VARIABLES
   # 
   home.sessionVariables = {
-    SHELL = "/home/btroutma/.nix-profile/bin/zsh";
     NIXPKGS_ALLOW_UNFREE=1;
     CLAUDE_CODE_USE_VERTEX=1;
     CLOUD_ML_REGION = "us-east5";
