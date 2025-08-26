@@ -24,13 +24,15 @@
     # General Dependencies
     pkgs.podman
     pkgs.jq
-    pkgs.nil
     pkgs.xclip
 
-    # Go dev dependencies
+    # Langs
+    ## Go
     pkgs.go
     pkgs.gopls
     pkgs.delve
+    ## Nix
+    pkgs.nil
   ];
 
   #
