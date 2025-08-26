@@ -55,8 +55,7 @@
   # ENVIRONMENT VARIABLES
   # 
   home.sessionVariables = {
-    EDITOR = "hx";
-    SHELL = "zsh";
+    SHELL = "/home/btroutma/.nix-profile/bin/zsh";
     NIXPKGS_ALLOW_UNFREE=1;
     CLAUDE_CODE_USE_VERTEX=1;
     CLOUD_ML_REGION = "us-east5";
@@ -98,12 +97,6 @@
         };
       };
     };
-  };
-
-  programs.bash = {
-    enable = true;
-    bashrcExtra = builtins.readFile ./bashrc;
-    profileExtra = builtins.readFile ./bash_profile;
   };
 
   programs.zsh = {
