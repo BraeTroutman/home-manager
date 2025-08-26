@@ -105,7 +105,7 @@
     enable = true;
     oh-my-zsh = {
       enable = true;
-      theme = "half-life";
+      theme = "eastwood";
       plugins = ["git"];
     };
   };
