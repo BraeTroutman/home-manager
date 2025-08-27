@@ -21,6 +21,11 @@
     pkgs.google-cloud-sdk
     pkgs.claude-code
 
+    # K8s
+    pkgs.etcd
+    pkgs.kubebuilder
+    pkgs.kubernetes
+
     # General Dependencies
     pkgs.podman
     pkgs.jq
@@ -35,6 +40,7 @@
     pkgs.go
     pkgs.gopls
     pkgs.delve
+    pkgs.ginkgo
     ## Nix
     pkgs.nil
   ];
