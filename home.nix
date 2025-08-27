@@ -23,7 +23,6 @@
 
     # K8s
     pkgs.etcd
-    pkgs.kubebuilder
     pkgs.kubernetes
 
     # General Dependencies
