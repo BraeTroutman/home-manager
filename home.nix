@@ -28,6 +28,7 @@
     pkgs.gnumake42
     pkgs.gcc
     pkgs.ripgrep
+    pkgs.agenix-cli
 
     # Langs
     ## Go
@@ -107,6 +108,10 @@
       enable = true;
       theme = "eastwood";
       plugins = ["git"];
+    };
+    shellAliases = {
+      hme = "home-manager edit";
+      hms = "home-manager switch";
     };
   };
 
