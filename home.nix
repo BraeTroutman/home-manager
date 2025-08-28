@@ -130,4 +130,8 @@
   };
 
   programs.ssh.enable = true;
+
+  programs.tmux = {
+    enable = true;
+  };
 }
