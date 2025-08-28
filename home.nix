@@ -32,7 +32,7 @@
     pkgs.gnumake42
     pkgs.gcc
     pkgs.ripgrep
-    pkgs.agenix-cli
+    pkgs.asciinema
 
     # Langs
     ## Go
