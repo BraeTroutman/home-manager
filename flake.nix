@@ -14,9 +14,11 @@
     { nixpkgs, home-manager, ... }:
     let
       system = "x86_64-linux";
+      localOverlay = import ./overlay/overlay.nix;
       pkgs = import nixpkgs {
         inherit system;
         config.allowUnfree = true;
+        overlays = [ localOverlay ];
       };
     in
     {
