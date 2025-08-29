@@ -21,10 +21,6 @@
     pkgs.google-cloud-sdk
     pkgs.claude-code
 
-    # K8s
-    pkgs.etcd
-    pkgs.kubernetes
-
     # General Dependencies
     pkgs.podman
     pkgs.jq
