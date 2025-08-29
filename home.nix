@@ -75,7 +75,7 @@
     enable = true;
     defaultEditor = true;
     settings = {
-      theme = "nord";
+      theme = "ao";
       keys.insert = {
         j = {
           k = "normal_mode";
