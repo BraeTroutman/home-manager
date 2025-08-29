@@ -16,6 +16,7 @@
     pkgs.rosa
     pkgs.ocm
     pkgs.awscli2
+    pkgs.openshift
 
     # Claude dependencies
     pkgs.google-cloud-sdk
