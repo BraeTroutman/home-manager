@@ -8,11 +8,10 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    agenix.url = "github:ryantm/agenix";
   };
 
   outputs =
-    { nixpkgs, agenix, home-manager, ... }:
+    { nixpkgs, home-manager, ... }:
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs {
@@ -28,7 +27,6 @@
         # the path to your home.nix.
         modules = [
           ./home.nix
-          agenix.homeManagerModules.default
         ];
 
         # Optionally use extraSpecialArgs
