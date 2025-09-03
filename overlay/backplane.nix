@@ -11,7 +11,7 @@ buildGoModule rec {
     sha256 = "sha256-EQvvOGSofOSMsSNQjx1CLP41fjt8QilMmML9DUpe8E0=";
   };
 
-  CGO_ENABLED = 0;
+  env.CGO_ENABLED = 0;
   doCheck = false;
 
   ldflags = [
