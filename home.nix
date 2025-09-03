@@ -40,6 +40,8 @@
     pkgs.ginkgo
     ## Nix
     pkgs.nil
+    ## Python
+    pkgs.ty
   ];
 
   #

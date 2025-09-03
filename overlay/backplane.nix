@@ -2,12 +2,12 @@
 
 buildGoModule rec {
   pname = "backplane-cli";
-  version = "0.1.45";
+  version = "5ce4c449415de9fc035e5eb20894d13cface4286";
 
   src = fetchFromGitHub {
     owner = "openshift";
     repo = "backplane-cli";
-    rev = "v${version}";
+    rev = "${version}";
     sha256 = "sha256-EQvvOGSofOSMsSNQjx1CLP41fjt8QilMmML9DUpe8E0=";
   };
 
