@@ -18,6 +18,7 @@
     pkgs.awscli2
     pkgs.openshift
     pkgs.ocm-backplane
+    pkgs.terraform
 
     # Claude dependencies
     pkgs.google-cloud-sdk
