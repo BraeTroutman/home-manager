@@ -118,6 +118,9 @@
       hme = "home-manager edit";
       hms = "home-manager switch";
     };
+    initContent = ''
+        complete -C '/home/btroutma/.nix-profile/bin/aws_completer' aws
+      '';
   };
 
   programs.git = {
