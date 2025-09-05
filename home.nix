@@ -32,6 +32,7 @@
     pkgs.gcc
     pkgs.ripgrep
     pkgs.asciinema
+    pkgs.codespell
 
     # Langs
     ## Go
@@ -43,6 +44,7 @@
     pkgs.nil
     ## Python
     pkgs.ty
+    pkgs.python313Packages.pip
   ];
 
   #
