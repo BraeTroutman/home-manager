@@ -115,6 +115,16 @@
         fish-lsp = {
           command = "${pkgs.fish-lsp}/bin/fish-lsp";
           args = [ "start" ];
+          config = {
+            directories = {
+              exclude = [
+                "~/.local/share/containers"
+                "/var/lib/containers"
+                "node_modules"
+                ".git"
+              ];
+            };
+          };
         };
       };
     };
