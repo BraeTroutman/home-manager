@@ -45,6 +45,8 @@
     ## Python
     pkgs.ty
     pkgs.python313Packages.pip
+    ## Fish
+    pkgs.fish-lsp
   ];
 
   #
@@ -108,6 +110,14 @@
         };
       };
     };
+    languages = {
+      language-server = {
+        fish-lsp = {
+          command = "${pkgs.fish-lsp}/bin/fish-lsp";
+          args = [ "start" ];
+        };
+      };
+    };
   };
 
   programs.zsh = {
@@ -126,6 +136,10 @@
       '';
   };
 
+  programs.fish = {
+    enable = true;
+  };
+
   programs.git = {
     enable = true;
     userName = "BraeTroutman";
@@ -139,6 +153,12 @@
 
   programs.tmux = {
     enable = true;
-    shell = "${pkgs.zsh}/bin/zsh";
+    shell = "${pkgs.fish}/bin/fish";
+    extraConfig = ''
+      # New panes/windows start in current directory
+      bind '"' split-window -c "#{pane_current_path}"
+      bind % split-window -h -c "#{pane_current_path}"
+      bind c new-window -c "#{pane_current_path}"
+    '';
   };
 }
