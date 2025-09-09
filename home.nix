@@ -138,8 +138,10 @@
       plugins = ["git"];
     };
     shellAliases = {
+      # home manager
       hme = "home-manager edit";
       hms = "home-manager switch";
+      # git
     };
     initContent = ''
         complete -C '/home/btroutma/.nix-profile/bin/aws_completer' aws
@@ -148,6 +150,16 @@
 
   programs.fish = {
     enable = true;
+    shellAliases = {
+      hme = "home-manager edit";
+      hms = "home-manager switch";
+    };
+    plugins = [
+      {
+        name = "plugin-git";
+        src = pkgs.fishPlugins.plugin-git.src;
+      }
+    ];
   };
 
   programs.git = {
