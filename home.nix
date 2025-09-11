@@ -34,6 +34,7 @@
     pkgs.ripgrep
     pkgs.asciinema
     pkgs.codespell
+    pkgs.sops
 
     # Langs
     ## Go
@@ -178,6 +179,9 @@
           set_color normal'';
       };
     };
+    shellInitLast = ''
+      sops --decrypt /home/btroutma/.secret.enc.env | source
+    '';
   };
 
   programs.git = {
