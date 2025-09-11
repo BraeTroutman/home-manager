@@ -19,6 +19,7 @@
     pkgs.openshift
     pkgs.ocm-backplane
     pkgs.terraform
+    pkgs.jira-cli-go
 
     # Claude dependencies
     pkgs.google-cloud-sdk
