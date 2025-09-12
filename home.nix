@@ -24,6 +24,7 @@
     # Claude dependencies
     pkgs.google-cloud-sdk
     pkgs.claude-code
+    pkgs.crush
 
     # General Dependencies
     pkgs.podman
