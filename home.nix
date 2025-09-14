@@ -20,11 +20,11 @@
     pkgs.ocm-backplane
     pkgs.terraform
     pkgs.jira-cli-go
+    pkgs.saml2aws
 
     # Claude dependencies
     pkgs.google-cloud-sdk
     pkgs.claude-code
-    pkgs.crush
 
     # General Dependencies
     pkgs.podman
