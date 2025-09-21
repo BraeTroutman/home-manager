@@ -101,6 +101,10 @@
   # 
   programs.home-manager.enable = true;
 
+  programs.zk = {
+    enable = true;
+  };
+
   programs.helix = {
     enable = true;
     defaultEditor = true;
