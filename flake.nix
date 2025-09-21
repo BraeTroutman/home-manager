@@ -8,17 +8,21 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nur = {
+      url = "github:nix-community/NUR";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
-    { nixpkgs, home-manager, ... }:
+    { nixpkgs, home-manager, nur, ... }:
     let
       system = "x86_64-linux";
       localOverlay = import ./overlay/overlay.nix;
       pkgs = import nixpkgs {
         inherit system;
         config.allowUnfree = true;
-        overlays = [ localOverlay ];
+        overlays = [ localOverlay nur.overlays.default ];
       };
     in
     {
