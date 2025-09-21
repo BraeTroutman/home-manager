@@ -47,8 +47,6 @@
     ## Node
     pkgs.nodejs_24
     pkgs.typescript-language-server
-    ## JSON
-    pkgs.vscode-json-languageserver
     ## Nix
     pkgs.nil
     ## Python
@@ -59,6 +57,11 @@
     ## HTML
     pkgs.superhtml
     pkgs.prettier
+    ## Ruby
+    pkgs.ruby
+    pkgs.rubyPackages.solargraph
+    ## CSS
+    pkgs.vscode-langservers-extracted
 
     # NUR packages
     pkgs.nur.repos.charmbracelet.crush
