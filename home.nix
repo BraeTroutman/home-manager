@@ -37,6 +37,7 @@
     pkgs.asciinema
     pkgs.codespell
     pkgs.sops
+    pkgs.neomutt
 
     # Langs
     ## Go
