@@ -29,6 +29,7 @@
     # General Dependencies
     pkgs.podman
     pkgs.jq
+    pkgs.yq
     pkgs.xclip
     pkgs.gnumake42
     pkgs.gcc
@@ -43,6 +44,11 @@
     pkgs.gopls
     pkgs.delve
     pkgs.ginkgo
+    ## Node
+    pkgs.nodejs_24
+    pkgs.typescript-language-server
+    ## JSON
+    pkgs.vscode-json-languageserver
     ## Nix
     pkgs.nil
     ## Python
@@ -50,6 +56,12 @@
     pkgs.python313Packages.pip
     ## Fish
     pkgs.fish-lsp
+    ## HTML
+    pkgs.superhtml
+    pkgs.prettier
+
+    # NUR packages
+    pkgs.nur.repos.charmbracelet.crush
   ];
 
   #
@@ -76,6 +88,8 @@
     CLAUDE_CODE_USE_VERTEX=1;
     CLOUD_ML_REGION = "us-east5";
     ANTHROPIC_VERTEX_PROJECT_ID = "itpc-gcp-hcm-pe-eng-claude";
+    VERTEXAI_PROJECT = "itpc-gcp-hcm-pe-eng-claude";
+    VERTEXAI_LOCATION = "us-east5";
   };
 
   #
@@ -130,6 +144,16 @@
           };
         };
       };
+      language = [
+        {
+          name = "html";
+          formatter = {
+            command = "prettier";
+            args = ["--parser" "html"];
+          };
+          auto-format = true;
+        }
+      ];
     };
   };
 
