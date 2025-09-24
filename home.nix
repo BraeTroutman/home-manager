@@ -154,6 +154,20 @@
             };
           };
         };
+        markdown-lsp = {
+          command = "${pkgs.zk}/bin/zk";
+          args = [ "lsp" ];
+          config = {
+            directories = {
+              exclude = [
+                "~/.local/share/containers"
+                "/var/lib/containers"
+                "node_modules"
+                ".git"
+              ];
+            };
+          };
+        };
       };
       language = [
         {
@@ -163,6 +177,10 @@
             args = ["--parser" "html"];
           };
           auto-format = true;
+        }
+        {
+          name = "markdown";
+          language-servers = ["markdown-lsp"];
         }
       ];
     };
