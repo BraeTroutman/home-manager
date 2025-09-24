@@ -37,7 +37,6 @@
     pkgs.asciinema
     pkgs.codespell
     pkgs.sops
-    pkgs.neomutt
 
     # Langs
     ## Go
@@ -100,6 +99,10 @@
   # PROGRAMS
   # 
   programs.home-manager.enable = true;
+
+  programs.neomutt = {
+    enable = true;
+  };
 
   programs.zk = {
     enable = true;
