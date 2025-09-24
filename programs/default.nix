@@ -1,6 +1,14 @@
 { ... }:
 
 {
+  imports = [
+    ./fish.nix
+    ./git.nix
+    ./helix.nix
+    ./tmux.nix
+    ./zsh.nix
+  ];
+  
   programs.home-manager.enable = true;
 
   programs.neomutt = {

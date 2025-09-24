@@ -2,12 +2,7 @@
 
 {
   imports = [
-    ./helix.nix
-    ./zsh.nix
-    ./fish.nix
-    ./git.nix
-    ./tmux.nix
-    ./programs.nix
+    ./programs
   ];
 
   #
