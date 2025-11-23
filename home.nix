@@ -27,6 +27,7 @@
     pkgs.jira-cli-go
     pkgs.saml2aws
     pkgs.stern
+    pkgs.gabi-cli
 
     # Claude dependencies
     pkgs.google-cloud-sdk
