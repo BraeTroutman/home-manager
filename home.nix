@@ -73,7 +73,6 @@
     ## CSS
     pkgs.vscode-langservers-extracted
     ## Haskell
-    pkgs.stack
     pkgs.haskell-language-server
 
     # NUR packages
