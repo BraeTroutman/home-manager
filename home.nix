@@ -74,7 +74,7 @@
     pkgs.vscode-langservers-extracted
     ## Haskell
     pkgs.haskell-language-server
-
+    pkgs.ghc
     # NUR packages
     pkgs.nur.repos.charmbracelet.crush
   ];
