@@ -28,6 +28,7 @@
     pkgs.saml2aws
     pkgs.stern
     pkgs.gabi-cli
+    pkgs.bitwarden-cli
 
     # Claude dependencies
     pkgs.google-cloud-sdk
@@ -44,6 +45,7 @@
     pkgs.asciinema
     pkgs.codespell
     pkgs.sops
+    pkgs.just
 
     # Langs
     ## Go
@@ -60,7 +62,6 @@
     pkgs.nil
     ## Python
     pkgs.ty
-    pkgs.python313Packages.pip
     ## Shells
     pkgs.fish-lsp
     pkgs.bash-language-server
@@ -72,6 +73,12 @@
     pkgs.rubyPackages.solargraph
     ## CSS
     pkgs.vscode-langservers-extracted
+    ## Rust
+    pkgs.rustup
+    ## TF
+    pkgs.terraform-ls
+    ## Markdown
+    pkgs.markdown-oxide
 
     # NUR packages
     pkgs.nur.repos.charmbracelet.crush
@@ -92,5 +99,7 @@
     ANTHROPIC_VERTEX_PROJECT_ID = "itpc-gcp-hcm-pe-eng-claude";
     VERTEXAI_PROJECT = "itpc-gcp-hcm-pe-eng-claude";
     VERTEXAI_LOCATION = "us-east5";
+    JIRA_URL = "https://redhat.atlassian.net";
+    JIRA_EMAIL = "btroutma@redhat.com";
   };
 }
