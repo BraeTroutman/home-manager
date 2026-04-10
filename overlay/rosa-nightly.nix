@@ -2,13 +2,13 @@
 
 buildGoModule rec {
   pname = "rosa-nightly";
-  version = "6a9c1574f103e392f030e98b8c52384f6d01a371";
+  version = "b81b9e95acd8758bd973c0753d8edb92b2e95bad";
 
   src = fetchFromGitHub {
     owner = "openshift";
     repo = "rosa";
     rev = "${version}";
-    sha256 = "sha256-CPJdaymA6poUQYqWZwnagTqLCChdDj852Y1l6qnxXZ8=";
+    sha256 = "sha256-aHRWCYuVzsmqTnuLgz1nqHeMTpE3O1YIf3sf2ee8uyc=";
   };
 
   nativeBuildInputs = [ makeWrapper ];
