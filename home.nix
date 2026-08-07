@@ -38,6 +38,7 @@
 
     # General Dependencies
     pkgs.podman
+    pkgs.podman-compose
     pkgs.jq
     pkgs.yq
     pkgs.xclip
