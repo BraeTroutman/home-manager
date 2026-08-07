@@ -89,6 +89,9 @@
 
     # NUR packages
     pkgs.nur.repos.charmbracelet.crush
+
+    # Custom overlay packages
+    pkgs.brush
   ];
 
   #
