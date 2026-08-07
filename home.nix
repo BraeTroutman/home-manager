@@ -84,6 +84,8 @@
     pkgs.terraform-ls
     ## Markdown
     pkgs.markdown-oxide
+    ## Java
+    pkgs.jdt-language-server
 
     # NUR packages
     pkgs.nur.repos.charmbracelet.crush
