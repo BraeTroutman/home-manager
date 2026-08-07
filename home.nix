@@ -50,6 +50,7 @@
     pkgs.codespell
     pkgs.sops
     pkgs.just
+    pkgs.zlib
 
     # Langs
     ## Go
