@@ -92,6 +92,13 @@
   ];
 
   #
+  # SERVICES
+  #
+  services.ollama = {
+    enable = true;
+  };
+
+  #
   # DIRECT DOTFILES
   # 
   home.file = {};
