@@ -46,6 +46,7 @@
     pkgs.gcc
     pkgs.ripgrep
     pkgs.asciinema
+    pkgs.asciinema-agg
     pkgs.codespell
     pkgs.sops
     pkgs.just
