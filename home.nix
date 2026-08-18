@@ -112,10 +112,10 @@
   home.sessionVariables = {
     NIXPKGS_ALLOW_UNFREE=1;
     CLAUDE_CODE_USE_VERTEX=1;
-    CLOUD_ML_REGION = "us-east5";
-    ANTHROPIC_VERTEX_PROJECT_ID = "itpc-gcp-hcm-pe-eng-claude";
-    VERTEXAI_PROJECT = "itpc-gcp-hcm-pe-eng-claude";
-    VERTEXAI_LOCATION = "us-east5";
+    CLOUD_ML_REGION = "global";
+    ANTHROPIC_VERTEX_PROJECT_ID = "itpc-ca-8c18d68a6f";
+    VERTEXAI_PROJECT = "itpc-ca-8c18d68a6f";
+    VERTEXAI_LOCATION = "global";
     JIRA_URL = "https://redhat.atlassian.net";
     JIRA_EMAIL = "btroutma@redhat.com";
   };
